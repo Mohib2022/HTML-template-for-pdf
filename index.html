@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF file template</title>
+  </head>
+  <style>
+    * {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-size: 0.9rem;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 1rem 0;
+    }
+    .main-heading {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .form-details-heading {
+      text-align: center;
+      box-shadow: 0px 0px 10px rgb(221, 221, 221);
+      padding: 0.8rem;
+      border-radius: 5px;
+      margin: 1.2rem 0;
+    }
+    .form-details-sub-heading {
+      margin-top: 1rem;
+    }
+    .form-details-specialization-fields {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+      margin: 0.5rem 0;
+    }
+    .form-details-fields {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1rem;
+      margin: 0.5rem 0;
+    }
+    .field > input {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid rgb(199, 199, 199);
+      border-radius: 5px;
+    }
+  </style>
+  <body>
+    <section class="container">
+      <div>
+        <div class="main-heading">
+          <h2>Application Form Details</h2>
+        </div>
+        <div class="form-details">
+          <div class="form-details-heading">
+            <h3>Basic Details</h3>
+          </div>
+          <div>
+            <div class="form-details-sub-heading">
+              <h4>Specialization Details :</h4>
+            </div>
+            <div class="form-details-specialization-fields">
+              <div class="field">
+                <label for="main-specialization"> Main Specialization </label>
+                <input
+                  value="Computer science and engineering"
+                  id="main-specialization"
+                  type="text"
+                />
+              </div>
+              <div class="field">
+                <label for="secondary-specialization">
+                  Secondary Specialization
+                </label>
+                <input
+                  value="Computer science and engineering"
+                  id="secondary-specialization"
+                  type="text"
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="form-details-sub-heading">
+              <h4>Personal Details :</h4>
+            </div>
+            <div class="form-details-fields">
+              <div class="field">
+                <label> First Name </label>
+                <input value="MR" type="text" />
+              </div>
+              <div class="field">
+                <label> Middle Name </label>
+                <input value="Akk" type="text" />
+              </div>
+              <div class="field">
+                <label> Last Name </label>
+                <input value="Bkk" type="text" />
+              </div>
+              <div class="field">
+                <label> Email </label>
+                <input value="BkkAkk@gmail.com" type="text" />
+              </div>
+              <div class="field">
+                <label> Mobile </label>
+                <input value="5555555555" type="text" />
+              </div>
+              <div class="field">
+                <label> Birth Date </label>
+                <input value="01/05/2005" type="text" />
+              </div>
+              <div class="field">
+                <label> Admission Year </label>
+                <input value="2022-23" type="text" />
+              </div>
+              <div class="field">
+                <label> Gender </label>
+                <input value="Male" type="text" />
+              </div>
+              <div class="field">
+                <label> Nationality </label>
+                <input value="Indian" type="text" />
+              </div>
+              <div class="field">
+                <label> Category </label>
+                <input value="OBC" type="text" />
+              </div>
+              <div class="field">
+                <label> Is Disable? </label>
+                <input value="Yes" type="text" />
+              </div>
+              <div class="field">
+                <label> Nate of Disability </label>
+                <input value="Eye lose" type="text" />
+              </div>
+              <div class="field">
+                <label> Family Annual Income </label>
+                <input value="More than 3 lak" type="text" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-details">
+          <div class="form-details-heading">
+            <h3>Parent Details</h3>
+          </div>
+
+          <div>
+            <div class="form-details-sub-heading">
+              <h4>Father Details :</h4>
+            </div>
+            <div class="form-details-fields">
+              <div class="field">
+                <label>Father Salutation </label>
+                <input value="MR" type="text" />
+              </div>
+              <div class="field">
+                <label> Father Name </label>
+                <input value="Akk" type="text" />
+              </div>
+
+              <div class="field">
+                <label>Father Email </label>
+                <input value="BkkAkk@gmail.com" type="text" />
+              </div>
+              <div class="field">
+                <label>Father Mobile </label>
+                <input value="5555555555" type="text" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="form-details-sub-heading">
+              <h4>Mother Details :</h4>
+            </div>
+            <div class="form-details-fields">
+              <div class="field">
+                <label>Mother Salutation </label>
+                <input value="MR" type="text" />
+              </div>
+              <div class="field">
+                <label> Mother Name </label>
+                <input value="Akk" type="text" />
+              </div>
+
+              <div class="field">
+                <label>Mother Email </label>
+                <input value="BkkAkk@gmail.com" type="text" />
+              </div>
+              <div class="field">
+                <label>Mother Mobile </label>
+                <input value="5555555555" type="text" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="form-details-sub-heading">
+              <h4>Guardian Details :</h4>
+            </div>
+            <div class="form-details-fields">
+              <div class="field">
+                <label>Guardian Salutation </label>
+                <input value="MR" type="text" />
+              </div>
+              <div class="field">
+                <label> Guardian Name </label>
+                <input value="Akk" type="text" />
+              </div>
+
+              <div class="field">
+                <label>Guardian Email </label>
+                <input value="BkkAkk@gmail.com" type="text" />
+              </div>
+              <div class="field">
+                <label>Guardian Mobile </label>
+                <input value="5555555555" type="text" />
+              </div>
+              <div class="field">
+                <label>Guardian Occupation </label>
+                <input value="Gov job" type="text" />
+              </div>
+              <div class="field">
+                <label>Guardian Designation </label>
+                <input value="Nahi malum" type="text" />
+              </div>
+              <div class="field">
+                <label>Relationship With Student </label>
+                <input value="Nahi malum" type="text" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-details">
+          <div class="form-details-heading">
+            <h3>Address Details</h3>
+          </div>
+
+          <div>
+            <div class="form-details-sub-heading">
+              <h4>Communication Address :</h4>
+            </div>
+            <div class="form-details-fields">
+              <div class="field">
+                <label> Country </label>
+                <input value="India" type="text" />
+              </div>
+              <div class="field">
+                <label> State </label>
+                <input value="Uttara Prodesh" type="text" />
+              </div>
+              <div class="field">
+                <label> City</label>
+                <input value="Mathura" type="text" />
+              </div>
+              <div class="field">
+                <label> Address Line 1 </label>
+                <input value="Nahi malum" type="text" />
+              </div>
+              <div class="field">
+                <label> Address Line 2 </label>
+                <input value="Nahi malum" type="text" />
+              </div>
+              <div class="field">
+                <label> Pin Code </label>
+                <input value="55555" type="text" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="form-details-sub-heading">
+              <h4>Permanent Address :</h4>
+            </div>
+            <div class="form-details-fields">
+              <div class="field">
+                <label> Country </label>
+                <input value="India" type="text" />
+              </div>
+              <div class="field">
+                <label> State </label>
+                <input value="Uttara Prodesh" type="text" />
+              </div>
+              <div class="field">
+                <label> City</label>
+                <input value="Mathura" type="text" />
+              </div>
+              <div class="field">
+                <label> Address Line 1 </label>
+                <input value="Nahi malum" type="text" />
+              </div>
+              <div class="field">
+                <label> Address Line 2 </label>
+                <input value="Nahi malum" type="text" />
+              </div>
+              <div class="field">
+                <label> Pin Code </label>
+                <input value="55555" type="text" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-details">
+          <div class="form-details-heading">
+            <h3>Educational Details</h3>
+          </div>
+
+          <div>
+            <div class="form-details-sub-heading">
+              <h4>Tenth School Details :</h4>
+            </div>
+            <div class="form-details-fields">
+              <div class="field">
+                <label> School Name </label>
+                <input value="ABC school" type="text" />
+              </div>
+              <div class="field">
+                <label> Board Name </label>
+                <input value="Uttara Prodesh" type="text" />
+              </div>
+              <div class="field">
+                <label> Year of Passing</label>
+                <input value="2015" type="text" />
+              </div>
+              <div class="field">
+                <label> Marking Scheme </label>
+                <input value="Percentage" type="text" />
+              </div>
+              <div class="field">
+                <label> Obtained CGPA </label>
+                <input value="4.5" type="text" />
+              </div>
+              <div class="field">
+                <label> Max Marks </label>
+                <input value="100" type="text" />
+              </div>
+              <div class="field">
+                <label> Registration Number </label>
+                <input value="100" type="text" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="form-details-sub-heading">
+              <h4>Tenth Subject Wise Details :</h4>
+            </div>
+            <div class="form-details-fields">
+              <div class="field">
+                <label> English </label>
+                <input value="50" type="text" />
+              </div>
+              <div class="field">
+                <label> Math </label>
+                <input value="50" type="text" />
+              </div>
+              <div class="field">
+                <label> Science</label>
+                <input value="50" type="text" />
+              </div>
+              <div class="field">
+                <label> Social Science </label>
+                <input value="50" type="text" />
+              </div>
+              <div class="field">
+                <label> Language </label>
+                <input value="50" type="text" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="form-details-sub-heading">
+              <h4>Inter School Details :</h4>
+            </div>
+            <div class="form-details-fields">
+              <div class="field">
+                <label> School Name </label>
+                <input value="ABC school" type="text" />
+              </div>
+              <div class="field">
+                <label> Board Name </label>
+                <input value="Uttara Prodesh" type="text" />
+              </div>
+              <div class="field">
+                <label> Stream</label>
+                <input value="" type="text" />
+              </div>
+              <div class="field">
+                <label> Year of Passing</label>
+                <input value="2015" type="text" />
+              </div>
+              <div class="field">
+                <label> Marking Scheme </label>
+                <input value="Percentage" type="text" />
+              </div>
+              <div class="field">
+                <label> Obtained CGPA </label>
+                <input value="4.5" type="text" />
+              </div>
+              <div class="field">
+                <label> Max Marks </label>
+                <input value="100" type="text" />
+              </div>
+              <div class="field">
+                <label> Registration Number </label>
+                <input value="100" type="text" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="form-details-sub-heading">
+              <h4>Inter Subject Wise Details :</h4>
+            </div>
+            <div class="form-details-fields">
+              <div class="field">
+                <label> Subject Name </label>
+                <input value="Physics" type="text" />
+              </div>
+              <div class="field">
+                <label> Max Marks </label>
+                <input value="100" type="text" />
+              </div>
+              <div class="field">
+                <label> Obtained Marks</label>
+                <input value="50" type="text" />
+              </div>
+              <div class="field">
+                <label> Percentage </label>
+                <input value="50" type="text" />
+              </div>
+              <div class="field">
+                <label> Month of Year Passing </label>
+                <input value="May 2019" type="text" />
+              </div>
+            </div>
+            <div class="form-details-fields">
+              <div class="field">
+                <label> Subject Name </label>
+                <input value="Chemistry" type="text" />
+              </div>
+              <div class="field">
+                <label> Max Marks </label>
+                <input value="100" type="text" />
+              </div>
+              <div class="field">
+                <label> Obtained Marks</label>
+                <input value="50" type="text" />
+              </div>
+              <div class="field">
+                <label> Percentage </label>
+                <input value="50" type="text" />
+              </div>
+              <div class="field">
+                <label> Month of Year Passing </label>
+                <input value="May 2019" type="text" />
+              </div>
+            </div>
+            <div class="form-details-fields">
+              <div class="field">
+                <label> Subject Name </label>
+                <input value="Mathematics" type="text" />
+              </div>
+              <div class="field">
+                <label> Max Marks </label>
+                <input value="100" type="text" />
+              </div>
+              <div class="field">
+                <label> Obtained Marks</label>
+                <input value="50" type="text" />
+              </div>
+              <div class="field">
+                <label> Percentage </label>
+                <input value="50" type="text" />
+              </div>
+              <div class="field">
+                <label> Month of Year Passing </label>
+                <input value="May 2019" type="text" />
+              </div>
+            </div>
+            <div class="form-details-fields">
+              <div class="field">
+                <label> Subject Name </label>
+                <input value="English" type="text" />
+              </div>
+              <div class="field">
+                <label> Max Marks </label>
+                <input value="100" type="text" />
+              </div>
+              <div class="field">
+                <label> Obtained Marks</label>
+                <input value="50" type="text" />
+              </div>
+              <div class="field">
+                <label> Percentage </label>
+                <input value="50" type="text" />
+              </div>
+              <div class="field">
+                <label> Month of Year Passing </label>
+                <input value="May 2019" type="text" />
+              </div>
+            </div>
+            <div class="form-details-fields">
+              <div class="field">
+                <label> Subject Name </label>
+                <input value="Hindi" type="text" />
+              </div>
+              <div class="field">
+                <label> Max Marks </label>
+                <input value="100" type="text" />
+              </div>
+              <div class="field">
+                <label> Obtained Marks</label>
+                <input value="50" type="text" />
+              </div>
+              <div class="field">
+                <label> Percentage </label>
+                <input value="50" type="text" />
+              </div>
+              <div class="field">
+                <label> Month of Year Passing </label>
+                <input value="May 2019" type="text" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="form-details-sub-heading">
+              <h4>Graduation Details :</h4>
+            </div>
+            <div class="form-details-fields">
+              <div class="field">
+                <label> Institute Name </label>
+                <input value="Kolkata College" type="text" />
+              </div>
+              <div class="field">
+                <label> Course Name </label>
+                <input value="CSE" type="text" />
+              </div>
+              <div class="field">
+                <label> Year of Completion</label>
+                <input value="2022" type="text" />
+              </div>
+              <div class="field">
+                <label> Marking Scheme </label>
+                <input value="50" type="text" />
+              </div>
+              <div class="field">
+                <label> Max Marks </label>
+                <input value="100" type="text" />
+              </div>
+              <div class="field">
+                <label> Aggregate Marks </label>
+                <input value="100" type="text" />
+              </div>
+              <div class="field">
+                <label> Registration Number </label>
+                <input value="55555555" type="text" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-details">
+          <div class="form-details-heading">
+            <h3>Attachment Details</h3>
+          </div>
+
+          <div>
+            <div class="form-details-sub-heading">
+              <h4>Tenth Attachment Details :</h4>
+            </div>
+            <div class="form-details-fields">
+              <div class="field">
+                <span>File Name : example.png</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="form-details-sub-heading">
+              <h4>Inter Attachment Details :</h4>
+            </div>
+            <div class="form-details-fields">
+              <div class="field">
+                <span>File Name : example.png</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="form-details-sub-heading">
+              <h4>Graduation Attachment Details :</h4>
+            </div>
+            <div class="form-details-fields">
+              <div class="field">
+                <span>File Name : example.png</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="form-details-sub-heading">
+              <h4>Other Attachment Details :</h4>
+            </div>
+            <div class="form-details-fields">
+              <div class="field">
+                <span>File Name : example.png</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
